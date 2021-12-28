@@ -88,9 +88,9 @@ func TestMerge(t *testing.T) {
 // 	testFramework(t, HeapSort)
 // }
 
-// func TestCount(t *testing.T) {
-// 	testFramework(t, Count)
-// }
+func TestCount(t *testing.T) {
+	testFramework(t, CountingSort)
+}
 
 func TestQuick(t *testing.T) {
 	testFramework(t, QuickSort)
@@ -163,9 +163,9 @@ func BenchmarkMerge(b *testing.B) {
 // 	benchmarkFramework(b, HeapSort)
 // }
 
-// func BenchmarkCount(b *testing.B) {
-// 	benchmarkFramework(b, Count)
-// }
+func BenchmarkCount(b *testing.B) {
+	benchmarkFramework(b, CountingSort)
+}
 
 func BenchmarkQuick(b *testing.B) {
 	benchmarkFramework(b, QuickSort)
