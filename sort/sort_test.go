@@ -92,9 +92,13 @@ func TestMerge(t *testing.T) {
 // 	testFramework(t, Count)
 // }
 
-// func TestQuick(t *testing.T) {
-// 	testFramework(t, QuickSort)
-// }
+func TestQuick(t *testing.T) {
+	testFramework(t, QuickSort)
+}
+
+func TestRandomizedQuick(t *testing.T) {
+	testFramework(t, RandomizedQuickSort)
+}
 
 // func TestRadix(t *testing.T) {
 // 	testFramework(t, RadixSort)
@@ -163,9 +167,13 @@ func BenchmarkMerge(b *testing.B) {
 // 	benchmarkFramework(b, Count)
 // }
 
-// func BenchmarkQuick(b *testing.B) {
-// 	benchmarkFramework(b, QuickSort)
-// }
+func BenchmarkQuick(b *testing.B) {
+	benchmarkFramework(b, QuickSort)
+}
+
+func BenchmarkRandomizedQuick(b *testing.B) {
+	benchmarkFramework(b, RandomizedQuickSort)
+}
 
 // func BenchmarkRadix(b *testing.B) {
 // 	benchmarkFramework(b, RadixSort)
