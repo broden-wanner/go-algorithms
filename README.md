@@ -16,3 +16,4 @@ using Go.
   - Merge sort
   - Quick sort
   - Selection sort
+  - Counting sort
